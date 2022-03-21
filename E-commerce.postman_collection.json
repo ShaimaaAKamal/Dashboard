@@ -1,0 +1,512 @@
+{
+	"info": {
+		"_postman_id": "2b7f19c2-9483-439d-be6d-9be392d7569a",
+		"name": "E-commerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "products",
+			"item": [
+				{
+					"name": "Allproducts",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "http://127.0.0.1:8000/api/products/index"
+					},
+					"response": []
+				},
+				{
+					"name": "createProduct",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": "http://127.0.0.1:8000/api/products/create"
+					},
+					"response": []
+				},
+				{
+					"name": "storeProduct",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name_en",
+									"value": "ovjeopjve",
+									"type": "text"
+								},
+								{
+									"key": "name_ar",
+									"value": "chiweiwe",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "50",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "code",
+									"value": "548486",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "cond",
+									"value": "new",
+									"type": "text"
+								},
+								{
+									"key": "brand_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "subcategory_id",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "details_en",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "details_ar",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/xampp36/htdocs/php/task5/assests/images/users/img.png"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/api/products/store"
+					},
+					"response": []
+				},
+				{
+					"name": "editProduct",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": "http://127.0.0.1:8000/api/products/edit/2"
+					},
+					"response": []
+				},
+				{
+					"name": "updateProduct",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "price ",
+									"value": "10000",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "amount",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "name_en",
+									"value": "rock",
+									"type": "text"
+								},
+								{
+									"key": "name_ar",
+									"value": "khjhi",
+									"type": "text"
+								},
+								{
+									"key": "subcategory_id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "code",
+									"value": "99597",
+									"type": "text"
+								},
+								{
+									"key": "cond",
+									"value": "ordinary",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "50",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/xampp36/htdocs/php/task5/assests/images/users/img.png"
+								}
+							]
+						},
+						"url": "http://127.0.0.1:8000/api/products/update/28"
+					},
+					"response": []
+				},
+				{
+					"name": "deleteProduct",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "http://127.0.0.1:8000/api/products/destroy/28"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "shaimaa kamal",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "01020414320",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "shaimaakamal36@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Hossam303*",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://127.0.0.1:8000/api/users/register"
+					},
+					"response": []
+				},
+				{
+					"name": "sendCode",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC91c2Vyc1wvbG9naW4iLCJpYXQiOjE2MjgxNzg0MTgsImV4cCI6MTYyODE4MjAxOCwibmJmIjoxNjI4MTc4NDE4LCJqdGkiOiJtdjFxeWJVYlN5NmF5OHYwIiwic3ViIjoyNiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.ScOU--qWkcpiPl-nQwkrhDaSWTgK7cijd8Xepc46GnA",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "http://127.0.0.1:8000/api/users/send-code"
+					},
+					"response": []
+				},
+				{
+					"name": "VerifyCode",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC91c2Vyc1wvcmVnaXN0ZXIiLCJpYXQiOjE2MjgxNzQzNjAsImV4cCI6MTYyODE3Nzk2MCwibmJmIjoxNjI4MTc0MzYwLCJqdGkiOiI0UlFtWkV0V1BlbHBHUkQ3Iiwic3ViIjoyNiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.eKwUTyXaBFwPhI3I1okfGJCrVQ1j49KFO80hi0B0Dcc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "code",
+									"value": "26251",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://127.0.0.1:8000/api/users/verify-code"
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "shaimaakamal36@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Hossam303*",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://127.0.0.1:8000/api/users/login"
+					},
+					"response": []
+				},
+				{
+					"name": "forgetPassword",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "shaimaakamal36@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://127.0.0.1:8000/api/users/forget-password"
+					},
+					"response": []
+				},
+				{
+					"name": "verifyforgetcode",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "shaimaakamal36@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "code",
+									"value": "26903",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://127.0.0.1:8000/api/users/verify-forget-code"
+					},
+					"response": []
+				},
+				{
+					"name": "setNewPassword",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "shaimaakamal36@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Hossam303*",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": "http://127.0.0.1:8000/api/users/set-new-password"
+					},
+					"response": []
+				},
+				{
+					"name": "profile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC91c2Vyc1wvbG9naW4iLCJpYXQiOjE2MjgxNzgxMTMsImV4cCI6MTYyODE4MTcxMywibmJmIjoxNjI4MTc4MTEzLCJqdGkiOiJXVU9BMU5lT2E0eGNlNFFJIiwic3ViIjoyNiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.0eaQeZABEkauw-0Ntd0YA4P3gpd_H0zBSJHFGv5t7tM",
+								"type": "text"
+							}
+						],
+						"url": "http://127.0.0.1:8000/api/users/profile"
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC91c2Vyc1wvbG9naW4iLCJpYXQiOjE2MjgxNzg0MTgsImV4cCI6MTYyODE4MjAxOCwibmJmIjoxNjI4MTc4NDE4LCJqdGkiOiJtdjFxeWJVYlN5NmF5OHYwIiwic3ViIjoyNiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.ScOU--qWkcpiPl-nQwkrhDaSWTgK7cijd8Xepc46GnA",
+								"type": "text"
+							}
+						],
+						"url": "http://127.0.0.1:8000/api/users/logout"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
